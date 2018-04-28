@@ -54,6 +54,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBlogSystemData.cs" />
+    <Compile Include="Migrations\201804280223212_InitialCreate.cs" />
+    <Compile Include="Migrations\201804280223212_InitialCreate.Designer.cs">
+      <DependentUpon>201804280223212_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804280646040_Added_Posts.cs" />
+    <Compile Include="Migrations\201804280646040_Added_Posts.Designer.cs">
+      <DependentUpon>201804280646040_Added_Posts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
@@ -69,6 +78,14 @@
       <Project>{655e6dd3-d081-446a-ad26-d8c48292ea50}</Project>
       <Name>BlogSystem.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804280223212_InitialCreate.resx">
+      <DependentUpon>201804280223212_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804280646040_Added_Posts.resx">
+      <DependentUpon>201804280646040_Added_Posts.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

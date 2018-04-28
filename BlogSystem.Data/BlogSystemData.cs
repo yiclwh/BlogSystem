@@ -30,6 +30,14 @@
             }
         }
 
+        public IRepository<Post> Posts
+        {
+            get
+            {
+                return this.GetRepository<Post>();
+            }
+        }
+
         private IRepository<T> GetRepository<T>() where T : class
         {
             var typeOfRepository = typeof(T);
