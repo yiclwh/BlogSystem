@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem", "BlogSystem\BlogSystem.csproj", "{79D58004-E94D-4540-8DC9-1AA40871978F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem.Data", "BlogSystem.Data\BlogSystem.Data.csproj", "{3534F9FE-53B0-462B-BAA8-13013F89D601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem.Models", "BlogSystem.Models\BlogSystem.Models.csproj", "{655E6DD3-D081-446A-AD26-D8C48292EA50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{79D58004-E94D-4540-8DC9-1AA40871978F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79D58004-E94D-4540-8DC9-1AA40871978F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79D58004-E94D-4540-8DC9-1AA40871978F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3534F9FE-53B0-462B-BAA8-13013F89D601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3534F9FE-53B0-462B-BAA8-13013F89D601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3534F9FE-53B0-462B-BAA8-13013F89D601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3534F9FE-53B0-462B-BAA8-13013F89D601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655E6DD3-D081-446A-AD26-D8C48292EA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655E6DD3-D081-446A-AD26-D8C48292EA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655E6DD3-D081-446A-AD26-D8C48292EA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655E6DD3-D081-446A-AD26-D8C48292EA50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
