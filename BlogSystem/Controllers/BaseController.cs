@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AutoMapper;
+using BlogSystem.Common.Mapping;
 using BlogSystem.Data;
 
 namespace BlogSystem.Controllers
@@ -19,5 +21,13 @@ namespace BlogSystem.Controllers
             this.Data = data;
         }
         protected IBlogSystemData Data { get; private set; }
+
+        protected IMapper Mapper
+        {
+            get
+            {
+                return AutoMapperConfig.Configuration.CreateMapper();
+            }
+        }
     }
 }
