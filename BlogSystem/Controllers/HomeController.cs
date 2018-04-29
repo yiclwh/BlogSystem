@@ -11,8 +11,17 @@ namespace BlogSystem.Controllers
     {
         public ActionResult Index()
         {
-            var posts = this.Data.Posts.All().ToList();
-            return View(new List<PostViewModel>());
+            var posts = this.Data.Posts
+                .All()
+                .Select(p => new PostViewModel()
+                {
+                    Author = p.Author.UserName,
+                    Content = p.Content,
+                    Title = p.Title,
+                    CreatedOn = DateTime.Now
+                })
+                .ToList();
+            return View(posts);
         }
 
         public ActionResult About()

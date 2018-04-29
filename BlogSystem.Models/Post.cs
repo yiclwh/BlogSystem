@@ -14,6 +14,6 @@ namespace BlogSystem.Models
 
         public virtual ApplicationUser Author { get; set; }
 
-        public int AuthorId { get; set; }
+        public string AuthorId { get; set; }
     }
 }
